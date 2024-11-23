@@ -5,15 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abf9f795-fc4a-40e8-9d2b-779cf2acaab5" name="Changes" comment="Initial Project created">
-      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/product-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/product/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/product/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/product/src/main/resources/db/migration/V1_init_database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/category/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/exception/ProductPurchaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/handler/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/product/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/product/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/product/ProductPurchaseRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/product/ProductPurchaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/product/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/product/ProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/product/ProductResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/product/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/customer-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/customer-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/discovery-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/discovery-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/customer/src/main/java/com/ayg/ecommerce/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/ayg/ecommerce/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/product-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/services/config-server/src/main/resources/configurations/product-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/product/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/product/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce/product/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,18 +42,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Muse-Semu"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Muse-Semu&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Muse-Semu/e-commerce-microservice.git",
-    "accountId": "57b8feb6-a886-4d83-9073-2d6e9479ddb8"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Muse-Semu/e-commerce-microservice.git&quot;,
+    &quot;accountId&quot;: &quot;57b8feb6-a886-4d83-9073-2d6e9479ddb8&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -66,11 +77,13 @@
     "Application.ProductApplication.executor": "Run",
     "Maven.config-server [clean].executor": "Run",
     "Maven.customer [clean].executor": "Run",
+    "Maven.product [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mama/E-Commerce/e-commerce-app/services/product/pom.xml",
+    "last_opened_file_path": "/home/mama/E-Commerce/e-commerce-app/services/product/src/main/java/com/ayg/eccomerce",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -80,6 +93,9 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.ayg.eccomerce.product" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/product/src/main/java/com/ayg/eccomerce" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -145,9 +161,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ProductApplication" />
-        <item itemvalue="Application.CustomerApplication" />
         <item itemvalue="Application.ConfigServerApplication" />
         <item itemvalue="Application.DiscoveryApplication" />
+        <item itemvalue="Application.CustomerApplication" />
       </list>
     </recent_temporary>
   </component>
