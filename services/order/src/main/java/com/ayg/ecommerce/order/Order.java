@@ -29,6 +29,8 @@ public class Order {
     private String customerId;
     private String productId;
     private BigDecimal totalAmount;
+    @Column(unique = true,  nullable = false)
+    private String reference;
     @Enumerated(STRING)
     private PaymentMethod paymentMethod;
 
