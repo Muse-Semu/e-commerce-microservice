@@ -1,0 +1,18 @@
+server:
+  port : 8070
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5454/order
+    username: admin
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+      database: postgresql
+      database-platform: org.hibernate.dialect.postgreSQLDialect
+application:
+  config:
+    customer-url: http://localhost:6060/api/v1/customers
+    product-url: http://localhost:6060/api/v1/products
+    payment-url: http://localhost:6060/api/v1/payments
+
