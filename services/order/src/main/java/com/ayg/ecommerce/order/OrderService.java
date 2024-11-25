@@ -3,6 +3,7 @@ package com.ayg.ecommerce.order;
 
 import com.ayg.ecommerce.customer.CustomerClient;
 import com.ayg.ecommerce.exception.BusinessException;
+import com.ayg.ecommerce.kafka.OrderConfirmation;
 import com.ayg.ecommerce.kafka.OrderProducer;
 import com.ayg.ecommerce.orderline.OrderLineRequest;
 import com.ayg.ecommerce.orderline.OrderLineService;
@@ -57,15 +58,15 @@ public class OrderService {
 //        );
 //        paymentClient.requestOrderPayment(paymentRequest);
 //
-//        orderProducer.sendOrderConfirmation(
-//                new OrderConfirmation(
-//                        request.reference(),
-//                        request.amount(),
-//                        request.paymentMethod(),
-//                        customer,
-//                        purchasedProducts
-//                )
-//        );
+        orderProducer.sendOrderConfirmation(
+                new OrderConfirmation(
+                        request.reference(),
+                        request.amount(),
+                        request.paymentMethod(),
+                        customer,
+                        purchasedProducts
+                )
+        );
 
         return order.getId();
     }
