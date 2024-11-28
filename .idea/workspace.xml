@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abf9f795-fc4a-40e8-9d2b-779cf2acaab5" name="Changes" comment="add some changes at PaymentService">
-      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce/payment/PaymentRequest.java" afterDir="false" />
+    <list default="true" id="abf9f795-fc4a-40e8-9d2b-779cf2acaab5" name="Changes" comment="integrate payment at order">
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/email/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/email/EmailTemplates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/kafka/NotificationsConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/kafka/order/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/kafka/order/OrderConfirmation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/kafka/order/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/kafka/payment/PaymentConfirmation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/kafka/payment/PaymentMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/notification/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/notification/NotificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/notification/NotificationType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce/order/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce/payment/PaymentClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce/payment/PaymentClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +30,8 @@
         <option value="Dockerfile" />
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -77,7 +84,7 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mama/E-Commerce/e-commerce-app/services/config-server/src/main/resources/configurations",
+    "last_opened_file_path": "/home/mama/E-Commerce/e-commerce-app/services/notification/src/main/java/com/ayg/ecommerce",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -93,11 +100,14 @@
       <recent name="com.ayg.ecommerce.customer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce" />
+      <recent name="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/notification" />
       <recent name="$PROJECT_DIR$/services/config-server/src/main/resources/configurations" />
       <recent name="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce" />
       <recent name="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce/payment" />
-      <recent name="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce" />
-      <recent name="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce/orderline" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ayg.ecommerce.payment" />
@@ -403,7 +413,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732761949907</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="integrate payment at order">
+      <option name="closed" value="true" />
+      <created>1732762760144</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1732762760144</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -431,6 +449,7 @@
     <MESSAGE value="BusinessException added for payment service" />
     <MESSAGE value="ExceptionHandler(handler) added at for payment service" />
     <MESSAGE value="add some changes at PaymentService" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some changes at PaymentService" />
+    <MESSAGE value="integrate payment at order" />
+    <option name="LAST_COMMIT_MESSAGE" value="integrate payment at order" />
   </component>
 </project>
