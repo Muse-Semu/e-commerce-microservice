@@ -402,3 +402,7 @@ Kservices/payment/src/main/java/com/ayg/ecommerce/payment/PaymentMapper.java,7/
 [services/payment/src/main/java/com/ayg/ecommerce/configuration/KafkaPaymentTopicConfig.java,b/3/b318c5210760573299c29a3fa8f5c356862a3e05
 Å
 Qservices/payment/src/main/java/com/ayg/ecommerce/exception/BusinessException.java,4/b/4bef4192177908c011a595402f8772adf0fcc7d6
+{
+Kservices/payment/src/main/java/com/ayg/ecommerce/handler/ErrorResponse.java,d/9/d944c48feb91fec2a53e60894ef70563c6db0f39
+Ñ
+Tservices/payment/src/main/java/com/ayg/ecommerce/handler/GlobalExceptionHandler.java,2/5/25c98be9b4f067e51203d5782b204b40bf747113
