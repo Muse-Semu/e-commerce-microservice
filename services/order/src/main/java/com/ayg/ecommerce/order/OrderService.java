@@ -8,6 +8,7 @@ import com.ayg.ecommerce.kafka.OrderProducer;
 import com.ayg.ecommerce.orderline.OrderLineRequest;
 import com.ayg.ecommerce.orderline.OrderLineService;
 import com.ayg.ecommerce.payment.PaymentClient;
+import com.ayg.ecommerce.payment.PaymentRequest;
 import com.ayg.ecommerce.product.ProductClient;
 import com.ayg.ecommerce.product.PurchaseRequest;
 import jakarta.persistence.EntityNotFoundException;
@@ -49,14 +50,14 @@ public class OrderService {
                     )
             );
         }
-//        var paymentRequest = new PaymentRequest(
-//                request.amount(),
-//                request.paymentMethod(),
-//                order.getId(),
-//                order.getReference(),
-//                customer
-//        );
-//        paymentClient.requestOrderPayment(paymentRequest);
+        var paymentRequest = new PaymentRequest(
+                request.amount(),
+                request.paymentMethod(),
+                order.getId(),
+                order.getReference(),
+                customer
+        );
+        paymentClient.requestOrderPayment(paymentRequest);
 //
         orderProducer.sendOrderConfirmation(
                 new OrderConfirmation(

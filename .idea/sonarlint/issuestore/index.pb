@@ -406,3 +406,5 @@ Qservices/payment/src/main/java/com/ayg/ecommerce/exception/BusinessException.ja
 Kservices/payment/src/main/java/com/ayg/ecommerce/handler/ErrorResponse.java,d/9/d944c48feb91fec2a53e60894ef70563c6db0f39
 „
 Tservices/payment/src/main/java/com/ayg/ecommerce/handler/GlobalExceptionHandler.java,2/5/25c98be9b4f067e51203d5782b204b40bf747113
+z
+Jservices/order/src/main/java/com/ayg/ecommerce/payment/PaymentRequest.java,c/2/c2ca07ff62dc8c62d9f4c5d1b83974ffd68a5082

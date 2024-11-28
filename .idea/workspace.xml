@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abf9f795-fc4a-40e8-9d2b-779cf2acaab5" name="Changes" comment="some ide and system changes">
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce/configuration/KafkaPaymentTopicConfig.java" afterDir="false" />
+    <list default="true" id="abf9f795-fc4a-40e8-9d2b-779cf2acaab5" name="Changes" comment="add some changes at PaymentService">
+      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce/payment/PaymentRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce/order/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce/order/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce/payment/PaymentClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce/payment/PaymentClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +77,7 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mama/E-Commerce/e-commerce-app/services/payment/src/main/java/com/ayg/ecommerce",
+    "last_opened_file_path": "/home/mama/E-Commerce/e-commerce-app/services/config-server/src/main/resources/configurations",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -90,13 +93,14 @@
       <recent name="com.ayg.ecommerce.customer" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/config-server/src/main/resources/configurations" />
       <recent name="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce" />
       <recent name="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce/payment" />
       <recent name="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce" />
       <recent name="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce/orderline" />
-      <recent name="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce/product" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ayg.ecommerce.payment" />
       <recent name="com.ayg.ecommerce.product" />
       <recent name="com.ayg.ecommerce.order" />
     </key>
@@ -359,7 +363,47 @@
       <option name="project" value="LOCAL" />
       <updated>1732759695653</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Kafka configuration added for payment service">
+      <option name="closed" value="true" />
+      <created>1732759782342</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1732759782342</updated>
+    </task>
+    <task id="LOCAL-00022" summary="BusinessException added for payment service">
+      <option name="closed" value="true" />
+      <created>1732759845282</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1732759845282</updated>
+    </task>
+    <task id="LOCAL-00023" summary="ExceptionHandler(handler) added at for payment service">
+      <option name="closed" value="true" />
+      <created>1732759959307</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1732759959307</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add some changes at PaymentService">
+      <option name="closed" value="true" />
+      <created>1732761933343</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1732761933343</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add some changes at PaymentService">
+      <option name="closed" value="true" />
+      <created>1732761949906</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1732761949907</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -383,6 +427,10 @@
     <MESSAGE value="NotificationProducer and notification request record created for payment service at notification sub module" />
     <MESSAGE value="kafka dependency injected" />
     <MESSAGE value="some ide and system changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some ide and system changes" />
+    <MESSAGE value="Kafka configuration added for payment service" />
+    <MESSAGE value="BusinessException added for payment service" />
+    <MESSAGE value="ExceptionHandler(handler) added at for payment service" />
+    <MESSAGE value="add some changes at PaymentService" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some changes at PaymentService" />
   </component>
 </project>
