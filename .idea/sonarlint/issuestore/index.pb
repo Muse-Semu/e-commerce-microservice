@@ -400,3 +400,5 @@ Oservices/payment/src/main/java/com/ayg/ecommerce/payment/PaymentRepository.java
 Kservices/payment/src/main/java/com/ayg/ecommerce/payment/PaymentMapper.java,7/0/70c29a35ac61220135d27ecbd91077cc52405fab
 ã
 [services/payment/src/main/java/com/ayg/ecommerce/configuration/KafkaPaymentTopicConfig.java,b/3/b318c5210760573299c29a3fa8f5c356862a3e05
+Å
+Qservices/payment/src/main/java/com/ayg/ecommerce/exception/BusinessException.java,4/b/4bef4192177908c011a595402f8772adf0fcc7d6
