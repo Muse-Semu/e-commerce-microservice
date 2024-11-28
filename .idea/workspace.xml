@@ -4,30 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abf9f795-fc4a-40e8-9d2b-779cf2acaab5" name="Changes" comment="add kafka configuration for order in the properties">
-      <change afterPath="$PROJECT_DIR$/services/customer/src/main/java/com/ayg/ecommerce/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce/kafka/OrderConfirmation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/order/src/main/java/com/ayg/ecommerce/payment/PaymentClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce/notification/NotificationProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce/notification/PaymentNotificationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce/payment/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce/payment/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce/payment/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce/payment/PaymentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce/payment/PaymentMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce/payment/PaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce/payment/PaymentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce/payment/PaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba651ba884bf3fe0f42641a23e00023af756857e" beforeDir="false" />
+    <list default="true" id="abf9f795-fc4a-40e8-9d2b-779cf2acaab5" name="Changes" comment="some ide and system changes">
+      <change afterPath="$PROJECT_DIR$/services/payment/src/main/java/com/ayg/ecommerce/configuration/KafkaPaymentTopicConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/a/ba651ba884bf3fe0f42641a23e00023af756857e" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/order/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,7 +311,55 @@
       <option name="project" value="LOCAL" />
       <updated>1732523100656</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Business exception added on customer service">
+      <option name="closed" value="true" />
+      <created>1732759334850</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1732759334850</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Order confirmation with kafka added on order service">
+      <option name="closed" value="true" />
+      <created>1732759422549</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1732759422549</updated>
+    </task>
+    <task id="LOCAL-00017" summary="mvc with request-record and mappers created for payment service">
+      <option name="closed" value="true" />
+      <created>1732759518742</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1732759518742</updated>
+    </task>
+    <task id="LOCAL-00018" summary="NotificationProducer and notification request record created for payment service at notification sub module">
+      <option name="closed" value="true" />
+      <created>1732759588996</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1732759588996</updated>
+    </task>
+    <task id="LOCAL-00019" summary="kafka dependency injected">
+      <option name="closed" value="true" />
+      <created>1732759641656</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1732759641656</updated>
+    </task>
+    <task id="LOCAL-00020" summary="some ide and system changes">
+      <option name="closed" value="true" />
+      <created>1732759695653</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1732759695653</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -349,6 +377,12 @@
     <MESSAGE value="Kafka order topic configuration created" />
     <MESSAGE value="rename the topic name" />
     <MESSAGE value="add kafka configuration for order in the properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="add kafka configuration for order in the properties" />
+    <MESSAGE value="Business exception added on customer service" />
+    <MESSAGE value="Order confirmation with kafka added on order service" />
+    <MESSAGE value="mvc with request-record and mappers created for payment service" />
+    <MESSAGE value="NotificationProducer and notification request record created for payment service at notification sub module" />
+    <MESSAGE value="kafka dependency injected" />
+    <MESSAGE value="some ide and system changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some ide and system changes" />
   </component>
 </project>

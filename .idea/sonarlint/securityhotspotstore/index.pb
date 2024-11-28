@@ -398,3 +398,5 @@ Wservices/payment/src/main/java/com/ayg/ecommerce/notification/NotificationProdu
 Oservices/payment/src/main/java/com/ayg/ecommerce/payment/PaymentRepository.java,3/3/33926cd26e7b9ab124ac11a6f2951239e857f9a3
 {
 Kservices/payment/src/main/java/com/ayg/ecommerce/payment/PaymentMapper.java,7/0/70c29a35ac61220135d27ecbd91077cc52405fab
+‹
+[services/payment/src/main/java/com/ayg/ecommerce/configuration/KafkaPaymentTopicConfig.java,b/3/b318c5210760573299c29a3fa8f5c356862a3e05
