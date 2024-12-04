@@ -39,7 +39,7 @@ public class EmailService {
 
         MimeMessage mimeMessage = mailSender.createMimeMessage();
         MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage, MimeMessageHelper.MULTIPART_MODE_MIXED_RELATED, UTF_8.name());
-        messageHelper.setFrom("contact@aliboucoding.com");
+        messageHelper.setFrom("from@gmail.com");
 
         final String templateName = PAYMENT_CONFIRMATION.getTemplate();
 
