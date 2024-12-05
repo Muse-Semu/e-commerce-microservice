@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abf9f795-fc4a-40e8-9d2b-779cf2acaab5" name="Changes" comment="integrate payment at order">
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/email/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/email/EmailTemplates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/kafka/NotificationsConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/kafka/order/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/kafka/order/OrderConfirmation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/kafka/order/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/kafka/payment/PaymentConfirmation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/kafka/payment/PaymentMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/notification/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/notification/NotificationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/notification/src/main/java/com/ayg/ecommerce/notification/NotificationType.java" afterDir="false" />
+    <list default="true" id="abf9f795-fc4a-40e8-9d2b-779cf2acaab5" name="Changes" comment="add email templates to use thymeleaf in html">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +74,7 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mama/E-Commerce/e-commerce-app/services/notification/src/main/java/com/ayg/ecommerce",
+    "last_opened_file_path": "/home/mama/E-Commerce/e-commerce-app/services/gateway/pom.xml",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -421,13 +411,34 @@
       <option name="project" value="LOCAL" />
       <updated>1732762760144</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="change source of email,cleanup">
+      <option name="closed" value="true" />
+      <created>1733356397971</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1733356397971</updated>
+    </task>
+    <task id="LOCAL-00028" summary="configure notification service">
+      <option name="closed" value="true" />
+      <created>1733356451816</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1733356451816</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add email templates to use thymeleaf in html">
+      <option name="closed" value="true" />
+      <created>1733356487364</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1733356487364</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial Project created" />
-    <MESSAGE value="Order module created" />
-    <MESSAGE value="port changes" />
     <MESSAGE value="Entities added to order microservice" />
     <MESSAGE value="add exception package and create the business exception" />
     <MESSAGE value="customer client added on order service" />
@@ -450,6 +461,9 @@
     <MESSAGE value="ExceptionHandler(handler) added at for payment service" />
     <MESSAGE value="add some changes at PaymentService" />
     <MESSAGE value="integrate payment at order" />
-    <option name="LAST_COMMIT_MESSAGE" value="integrate payment at order" />
+    <MESSAGE value="change source of email,cleanup" />
+    <MESSAGE value="configure notification service" />
+    <MESSAGE value="add email templates to use thymeleaf in html" />
+    <option name="LAST_COMMIT_MESSAGE" value="add email templates to use thymeleaf in html" />
   </component>
 </project>
