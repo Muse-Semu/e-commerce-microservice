@@ -69,4 +69,7 @@ public class ProductService {
         return purchasedProducts;
     }
 
+    public List<Product> createProducts(List<Product> request) {
+        return repository.saveAll(request);
+    }
 }
