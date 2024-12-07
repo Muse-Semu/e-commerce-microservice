@@ -1,5 +1,6 @@
 package com.ayg.ecommerce.order;
 
+import com.ayg.ecommerce.orderline.OrderLine;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
@@ -34,7 +35,7 @@ public class Order {
     @Enumerated(STRING)
     private PaymentMethod paymentMethod;
 
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "order")
     private List<OrderLine> orderLineList;
 
     @CreatedDate
