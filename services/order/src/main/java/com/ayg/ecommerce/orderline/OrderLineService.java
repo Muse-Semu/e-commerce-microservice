@@ -1,11 +1,11 @@
 package com.ayg.ecommerce.orderline;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
-
 @Service
 @RequiredArgsConstructor
 public class OrderLineService {
@@ -13,9 +13,16 @@ public class OrderLineService {
     private final OrderLineRepository repository;
     private final OrderLineMapper mapper;
 
-    public Integer saveOrderLine(OrderLineRequest request) {
-        var order = mapper.toOrderLine(request);
-        return repository.save(order).getId();
+    public Integer saveOrderLine(OrderLine request) {
+
+        OrderLine orderLine = new OrderLine();
+
+        orderLine.setOrder(request.getOrder());
+        orderLine.setProductId(request.getProductId());
+        orderLine.setQuantity(request.getQuantity());
+
+
+        return repository.save(orderLine).getId();
     }
 
     public List<OrderLineResponse> findAllByOrderId(Integer orderId) {

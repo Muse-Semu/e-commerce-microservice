@@ -4,6 +4,7 @@ package com.ayg.ecommerce.orderline;
 import com.ayg.ecommerce.order.Order;
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 @AllArgsConstructor
 @Builder
@@ -11,7 +12,6 @@ import lombok.*;
 @Setter
 @Entity
 @NoArgsConstructor
-@Table(name = "customer_line")
 public class OrderLine {
 
     @Id
@@ -23,3 +23,4 @@ public class OrderLine {
     private Integer productId;
     private double quantity;
 }
+

@@ -5,6 +5,7 @@ import com.ayg.ecommerce.customer.CustomerClient;
 import com.ayg.ecommerce.exception.BusinessException;
 import com.ayg.ecommerce.kafka.OrderConfirmation;
 import com.ayg.ecommerce.kafka.OrderProducer;
+import com.ayg.ecommerce.orderline.OrderLine;
 import com.ayg.ecommerce.orderline.OrderLineRequest;
 import com.ayg.ecommerce.orderline.OrderLineService;
 import com.ayg.ecommerce.payment.PaymentClient;
@@ -13,12 +14,14 @@ import com.ayg.ecommerce.product.ProductClient;
 import com.ayg.ecommerce.product.PurchaseRequest;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class OrderService {
@@ -31,6 +34,7 @@ public class OrderService {
     private final OrderLineService orderLineService;
     private final OrderProducer orderProducer;
 
+
     @Transactional
     public Integer createOrder(OrderRequest request) {
         var customer = this.customerClient.findCustomerById(request.customerId())
@@ -42,9 +46,9 @@ public class OrderService {
 
         for (PurchaseRequest purchaseRequest : request.products()) {
             orderLineService.saveOrderLine(
-                    new OrderLineRequest(
+                    new OrderLine(
                             null,
-                            order.getId(),
+                            order,
                             purchaseRequest.productId(),
                             purchaseRequest.quantity()
                     )
@@ -58,7 +62,7 @@ public class OrderService {
                 customer
         );
         paymentClient.requestOrderPayment(paymentRequest);
-//
+
         orderProducer.sendOrderConfirmation(
                 new OrderConfirmation(
                         request.reference(),
