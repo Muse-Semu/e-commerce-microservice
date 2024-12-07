@@ -14,8 +14,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 
-import static com.ayg.ecommerce.notification.NotificationType.ORDER_CONFIRMATION;
-import static com.ayg.ecommerce.notification.NotificationType.PAYMENT_CONFIRMATION;
+import static com.ayg.ecommerce.notification.NotificationType.*;
 import static java.lang.String.format;
 
 @Service
@@ -50,6 +49,27 @@ public class NotificationsConsumer {
         repository.save(
                 Notification.builder()
                         .type(ORDER_CONFIRMATION)
+                        .notificationDate(LocalDateTime.now())
+                        .orderConfirmation(orderConfirmation)
+                        .build()
+        );
+        var customerName = orderConfirmation.customer().firstname() + " " + orderConfirmation.customer().lastname();
+        emailService.sendOrderConfirmationEmail(
+                orderConfirmation.customer().email(),
+                customerName,
+                orderConfirmation.totalAmount(),
+                orderConfirmation.orderReference(),
+                orderConfirmation.products()
+        );
+    }
+
+
+    @KafkaListener(topics = "register-topic")
+    public void customerRegistrationConfirmationNotification(OrderConfirmation orderConfirmation) throws MessagingException {
+        log.info(format("Consuming the message from order-topic Topic:: %s", orderConfirmation));
+        repository.save(
+                Notification.builder()
+                        .type(REGISTRATION_CONFIRMATION)
                         .notificationDate(LocalDateTime.now())
                         .orderConfirmation(orderConfirmation)
                         .build()
