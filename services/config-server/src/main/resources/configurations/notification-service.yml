@@ -13,10 +13,10 @@ spring:
       group-id: orderGroup,paymentGroup
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.support.serializer.JsonSerializer
+      value-deserializer:  org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
         spring.json.trusted.packages: '*'
-        spring.json.type.mapping: orderConfirmation:com.ayg.ecommerce.kafka.OrderConfirmation, paymentConfirmation:com.ayg.ecommerce.notification.PaymentNotificationRequest
+        spring.json.type.mapping: orderConfirmation:com.ayg.ecommerce.kafka.order.OrderConfirmation, paymentConfirmation:com.ayg.ecommerce.kafka.payment.PaymentConfirmation
 
   mail:
     host: localhost
