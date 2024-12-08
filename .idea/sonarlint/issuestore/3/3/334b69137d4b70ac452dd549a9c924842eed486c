@@ -1,3 +1,3 @@
 
-—
-java:S6204&"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ôäÏ¶µ2
+½
+java:S6204&"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8”üÀÊ¹2J$b7b47d1a-af92-4613-b341-8135d5c5b2a6

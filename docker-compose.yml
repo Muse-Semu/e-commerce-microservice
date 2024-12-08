@@ -94,9 +94,6 @@ services:
   zipkin:
     container_name: zipkin
     image: openzipkin/zipkin
-    environment:
-      - STORAGE_TYPE=elasticsearch
-      - ES_HOSTS=elasticsearch
     ports:
       - 9411:9411
     networks:

@@ -320,8 +320,6 @@ C
 services/order/mvnw,1/7/17dce5ac3651290862553e949215055419a7b871
 o
 ?services/order/src/main/java/com/ayg/ecommerce/order/Order.java,4/c/4c730608b1e9f60ac49b3407a15eed4a5c8d37b0
-s
-Cservices/order/src/main/java/com/ayg/ecommerce/order/OrderLine.java,f/2/f26b9950427d38b4471908426daa2e1a5690c1b3
 w
 Gservices/order/src/main/java/com/ayg/ecommerce/order/PaymentMethod.java,5/3/53f5d2254a0e015a55bea22bad2db393a2cf7d69
 y
@@ -774,8 +772,6 @@ w
 G.idea/sonarlint/issuestore/e/a/eab023f64be2471c3950b0b0208c39d37eda7d6d,4/5/454a4339949d6b4bc5efa1c806256e7cbac4ab9a
 Å
 Q.idea/sonarlint/securityhotspotstore/4/c/4c730608b1e9f60ac49b3407a15eed4a5c8d37b0,f/6/f64d658f77c3e17b6cf13e14d3cd54e42b8a2ecf
-Å
-Q.idea/sonarlint/securityhotspotstore/f/2/f26b9950427d38b4471908426daa2e1a5690c1b3,2/a/2a4684fa08a49f9c48887d4b08b38da22d05cd00
 Å
 Q.idea/sonarlint/securityhotspotstore/5/3/53f5d2254a0e015a55bea22bad2db393a2cf7d69,5/9/593fdf60d6fe2d06d8f35f68e69131cfbfd78a90
 w
